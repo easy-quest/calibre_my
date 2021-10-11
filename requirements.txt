@@ -13,3 +13,4 @@ tornado
 Wand 
 unidecode 
 lxml 
+chardet

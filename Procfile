@@ -1,1 +1,1 @@
-web: gunicorn cps.wsgi --log-file -
+web: python cps.py --log-file -
