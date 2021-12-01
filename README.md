@@ -9,10 +9,6 @@ touch Procfile
 ```
 
 ```bash
-touch Procfile
-```
-
-```bash
 pipenv install gunicorn
 ```
 
@@ -27,12 +23,22 @@ git add -A
 git commit -m 'New updates for Heroku deployment'
 git push -u origin master
 ```
+```bash
 heroku login
+```
+```bash
 heroku create
+```
 
-heroku git:remote morning-plateau-58270
-
+```bash
+heroku git:remote $APP_NAME
+```
+```bash
 heroku config:set DISABLE_COLLECTSTATIC=1
-
+```
+```bash
 git push heroku master
+```
+```bash
 heroku ps:scale web=1
+```
